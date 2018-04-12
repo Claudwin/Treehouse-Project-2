@@ -7,16 +7,11 @@ let $ul;
 let $studentList = $(`.student-item`);
 let StudentsToDisplay = 10;
 
-//search section variables
-let newMatchedStudents = [];
-let $refreshBtn;
-let $search;
-
 /*------------------------Calls Functions On Page Load-------------------------------------*/
 
 $(document).ready(function() {
 createPagination($studentList); //Calls pagination Functions
-$searchDiv();
+$searchDiv(); //Adds Search Section
 
 });
 /*------------------------showPage-------------------------------------*/
